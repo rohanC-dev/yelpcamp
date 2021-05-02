@@ -1,0 +1,16 @@
+<%- include("../partials/header") %>
+
+<div class = "container" style="padding-top: 100px">
+    <h1>Add a new comment to  <%= campground.name %></h1>
+    <div class  = "row">
+        <form action = "/campgrounds/<%= campground._id %>/comments " method = "POST">
+            <input class = "form-control" type = "text" name = "comment[text]" placeholder="comment">
+            <button class = "btn btn-danger">SUBMIT</button>
+        </form>
+    </div>
+    
+    
+</div>
+
+
+<%- include("../partials/footer") %>
