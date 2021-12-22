@@ -1,4 +1,16 @@
-.thumbnail img{
+.editAndDeleteButtons{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.addCommentButton{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+
+thumbnail img{
     width: 100%;
 }
 

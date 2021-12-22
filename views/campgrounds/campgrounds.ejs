@@ -15,13 +15,12 @@
 
         <% for(var i = 0; i < campgrounds.length; i++){ %>
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-            <div class="thumbnail">
-                <div id  = "campgroundTitle" class="caption">
+            <div class="card">
+                <img src="<%= campgrounds[i].image %>" class="card-img-top" alt="<%= campgrounds[i].name %>"/>
+                <div class="card-body">
                     <h4> <%= campgrounds[i].name %> </h4>
-                </div>
-                <img src="<%= campgrounds[i].image %>" />
-                <div id  = "moreInfoContainer" class = "container">
-                    <a id="moreInfo" href="/campgrounds/<%= campgrounds[i]._id %>" class="btn btn-success">More Info</a>
+                    <p class="card-text"><%= campgrounds[i].description.substring(0, 50) %>...</p>
+                    <a href="/campgrounds/<%= campgrounds[i]._id %>" class="btn btn-success">Go somewhere</a>
                 </div>
             </div>
         </div>
